@@ -1,4 +1,4 @@
-#include <studio.h>
+#include <sudio.h>
 /**
  * main - Entry point
  * Return: success
