@@ -11,7 +11,7 @@ int main(void)
 	/*loop to print lowercase letters except 'q' and 'e'*/
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		if (ch != 'q' and ch != 'e')
+		if (ch != 'q' && ch != 'e')
 		{
 		putchar(ch);
 		}
