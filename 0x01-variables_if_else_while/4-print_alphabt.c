@@ -16,6 +16,8 @@ int main(void)
 		putchar(ch);
 		}
 	}
+	/*print new line*/
+	putchar('\n');
 
 	return (0);
 }
