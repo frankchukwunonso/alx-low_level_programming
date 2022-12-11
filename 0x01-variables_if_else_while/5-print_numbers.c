@@ -10,7 +10,7 @@ int main(void)
 
 	for (digits = 0; digits <= 9; digits++)
 	{
-	printf(digits);
+	printf("%d", digits);
 	}
 
 	return (0);
