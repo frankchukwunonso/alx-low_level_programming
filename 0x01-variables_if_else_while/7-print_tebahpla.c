@@ -4,8 +4,9 @@
  * Return: success
  */
 int main(void)
-{	/*declare ch*/
-	char ch;
+{
+	/*declare ch*/
+	int ch;
 
 	for (ch = 'z'; ch >= 'a'; ch--)
 	{
