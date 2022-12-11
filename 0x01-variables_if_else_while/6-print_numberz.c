@@ -14,7 +14,7 @@ int main(void)
 		putchar(digits);
 	}
 	/*print new line*/
-	putchar("\n");
+	putchar('\n');
 
 	return (0);
 }
