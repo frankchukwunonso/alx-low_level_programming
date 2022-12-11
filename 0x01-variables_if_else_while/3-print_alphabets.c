@@ -16,7 +16,7 @@ int main(void)
 	}
 
 	/*loop to print out UPPERCASE alphabets*/
-	for (CH = 'A'; ch <= 'Z'; CH++)
+	for (CH = 'A'; CH <= 'Z'; CH++)
 	{
 	putchar(CH);
 	}
