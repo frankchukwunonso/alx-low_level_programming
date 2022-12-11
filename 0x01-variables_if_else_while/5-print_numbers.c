@@ -6,14 +6,14 @@
 int main(void)
 {
 	/*initialise digits*/
-	int digits = '0';
+	int digits;
 
 	/*loop to print digits*/
 	for (digits = 0; digits <= 9; digits++)
 	{
 	printf("%d", digits);
 	}
-	printf('\n');
+	printf("\n");
 
 	return (0);
 }
