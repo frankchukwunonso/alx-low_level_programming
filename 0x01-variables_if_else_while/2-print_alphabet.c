@@ -13,6 +13,8 @@ int main(void)
 	{
 	putchar(ch);
 	}
+	/*add a new line*/
+	putchar('\n')
 
 
 	return (0);
