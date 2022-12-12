@@ -15,7 +15,7 @@ int main(void)
 		{
 			for (units = '0'; units <= '9'; units++)
 			{
-				if ((cent < tens) && (tens < units))
+				if ((cents < tens) && (tens < units))
 				{
 					putchar(cents);
 					putchar(tens);
