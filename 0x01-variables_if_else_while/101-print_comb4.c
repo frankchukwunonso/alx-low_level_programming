@@ -15,19 +15,16 @@ int main(void)
 		{
 			for (cents = '0'; cents <= '9'; cents++)
 			{
-				if ((cents != tens) || cents != units)
+				if (((cent != tens) || (tens != units)) || (tens != units))
 				{
-					if (tens != units)
-					{/* conditions for digits combo */
-						putchar(cents);
-						putchar(tens);
-						putchar(units);
-						if (cents == '7' && tens == '8' && units == '9')
-						{/* stop punctuation at 789 */
-							break;
-						}
-						putchar(',');
+					putchar(cents);
+					putchar(tens);
+					putchar(units);
+					if (cents == '7' && tens == '8' && units == '9')
+					{/* stop punctuation at 789 */
+						break;
 					}
+					putchar(',');
 				}
 			}
 		}
