@@ -12,7 +12,7 @@ int main(void)
 	{
 		for (tens = '0'; tens <= '9'; tens++)
 		{
-			if (ten != units && tens < units)
+			if (tens != units && tens < units)
 /**
  * The first conjunct is to prevent a 2-digit number
  * with same digits from occuring while the second
@@ -20,15 +20,15 @@ int main(void)
  * their first occurence only.
  */
 			{
-				putchar(units)
+				putchar(units);
 						/* print the 2-digit combinations*/
-				putchar(tens)
-				putchar(',')
-				putchar(' ')
+				putchar(tens);
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
-	putchar('\n')/* print new line */
+	putchar('\n');/* print new line */
 
-	return (0)
+	return (0);
 }
