@@ -8,9 +8,9 @@ int main(void)
 	int units;
 	int tens;
 
-	for (units = '0'; units <= '9'; units++)
+	for (tens = '0'; tens <= '9'; tens++)
 	{
-		for (tens = '0'; tens <= '9'; tens++)
+		for (units = '0'; units <= '9'; units++)
 		{
 			if (tens != units && tens < units)
 /**
