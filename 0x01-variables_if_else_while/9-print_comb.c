@@ -6,7 +6,7 @@
 int main(void)
 {
 	/*declaring combo*/
-	int combo = 0;
+	int combo = '0';
 
 	/*code to print all possible combinations of all single digits*/
 	while (combo < 9)
