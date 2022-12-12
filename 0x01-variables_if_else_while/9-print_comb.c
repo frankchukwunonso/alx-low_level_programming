@@ -6,15 +6,17 @@
 int main(void)
 {
 	/*declaring combo*/
-	int combo;
+	int combo = 0;
 
 	/*code to print all possible combinations of all single digits*/
-	for (combo = 0; combo < 1000000000; combo++)
+	while (combo < 9; combo++)
 	{
 		putchar(combo);
 		putchar(',');
 		putchar(' ');
 	}
+	/*print 9*/
+	putchar(9);
 
 	return (0);
 }
