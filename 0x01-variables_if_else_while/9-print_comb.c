@@ -14,7 +14,7 @@ int main(void)
 		putchar(combo);
 		putchar(',');
 		putchar(' ');
-		combo++
+		combo++;
 	}
 	/*print 9*/
 	putchar(9);
