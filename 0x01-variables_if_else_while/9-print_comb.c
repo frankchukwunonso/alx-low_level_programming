@@ -11,10 +11,10 @@ int main(void)
 	/*code to print all possible combinations of all single digits*/
 	while (combo < 9)
 	{
-		combo++;
 		putchar(combo);
 		putchar(',');
 		putchar(' ');
+		combo++
 	}
 	/*print 9*/
 	putchar(9);
