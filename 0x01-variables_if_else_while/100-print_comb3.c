@@ -19,7 +19,7 @@ int main(void)
 				putchar(units);
 				if (tens == '8' && units == '9')
 				{
-					break
+					break;
 				}
 				putchar(',');
 				putchar(' ');
