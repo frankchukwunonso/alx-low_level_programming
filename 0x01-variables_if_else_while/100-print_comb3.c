@@ -12,17 +12,15 @@ int main(void)
 	{
 		for (units = '0'; units <= '9'; units++)
 		{
-			if (tens != units && tens < units)
-/**
- * The first conjunct is to prevent a 2-digit number
- * with same digits from occuring while the second
- * conjunct is to restrict the 2-digit-combination to
- * their first occurence only.
- */
+			if (tens != units && tens < units)/* no repeat/same digit */
 			{
 				putchar(tens);
-						/* print the 2-digit combinations*/
+						/* print the 2-digit combinations */
 				putchar(units);
+				if (tens == '8' && units == '9')
+				{
+					break
+				}
 				putchar(',');
 				putchar(' ');
 			}
