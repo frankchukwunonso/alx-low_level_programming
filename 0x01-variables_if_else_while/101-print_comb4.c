@@ -15,7 +15,8 @@ int main(void)
 		{
 			for (units = '0'; units <= '9'; units++)
 			{
-				if (!(((tens == units) || (tens == cents)) || (cents == units)))
+				if ((!((cents == tens || cents == units) || (tens == units)))
+						|| ((cents < tens) && (tens < units)))
 				{
 					putchar(cents);
 					putchar(tens);
@@ -29,7 +30,7 @@ int main(void)
 			}
 		}
 	}
-	putchar(',');/* new line */
+	putchar('\n');/* new line */
 
 	return (0);
 }
