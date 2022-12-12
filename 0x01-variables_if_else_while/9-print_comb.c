@@ -9,7 +9,7 @@ int main(void)
 	int combo = '0';
 
 	/*code to print all possible combinations of all single digits*/
-	while (combo < 9)
+	while (combo < '9')
 	{
 		putchar(combo);
 		putchar(',');
