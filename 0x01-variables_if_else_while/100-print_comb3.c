@@ -20,9 +20,9 @@ int main(void)
  * their first occurence only.
  */
 			{
-				putchar(units);
-						/* print the 2-digit combinations*/
 				putchar(tens);
+						/* print the 2-digit combinations*/
+				putchar(units);
 				putchar(',');
 				putchar(' ');
 			}
