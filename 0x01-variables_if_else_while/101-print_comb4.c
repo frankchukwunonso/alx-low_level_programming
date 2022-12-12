@@ -15,15 +15,17 @@ int main(void)
 		{
 			for (cents = '0'; cents <= '9'; cents++)
 			{
-				if (units != tens != cents || cents > tens > units)
-				{
+				if (((units != tens) && (tens != cents)) ||
+					       ((cents > tens) && (tens > units)))
+				{/* conditions for digits combo */
 					putchar(cents);
 					putchar(tens);
 					putchar(units);
 					if (cent == '7' && tens == '8' && units == '9')
-					{/* conditions for digits combo */
+					{/* stop punctuation at 789 */
 						break;
 					}
+					putchar(',')
 				}
 			}
 		}
