@@ -14,7 +14,7 @@ int main(void)
 	{
 		for (unit1 = '0'; unit1 <= '9'; unit1++)
 		{
-			for ten2 = '0'; ten2 <= '9', ten2++)
+			for (ten2 = '0'; ten2 <= '9'; ten2++)
 			{
 				for (unit2 = '0'; unit2 <= '9'; unit2++)
 				{
