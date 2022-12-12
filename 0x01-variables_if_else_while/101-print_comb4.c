@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	int cent;/* declare variables */
+	int cents;/* declare variables */
 	int tens;
 	int units;
 
