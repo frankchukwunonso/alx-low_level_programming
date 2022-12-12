@@ -9,11 +9,11 @@ int main(void)
 	int tens;
 	int units;
 
-	for (units = '0'; units <= '9'; units++)/* loop for 3-digit numbers */
+	for (cents = '0'; cents <= '9'; cents++)/* loop for 3-digit numbers */
 	{
 		for (tens = '0'; tens <= '9'; tens++)
 		{
-			for (cents = '0'; cents <= '9'; cents++)
+			for (units = '0'; units <= '9'; units++)
 			{
 				if (!(((tens == units) || (tens == cents)) || (cents == units)))
 				{
