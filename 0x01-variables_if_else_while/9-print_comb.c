@@ -9,15 +9,20 @@ int main(void)
 	int combo = '0';
 
 	/*code to print all possible combinations of all single digits*/
-	while (combo < '9')
+	while (combo <= '9')
 	{
 		putchar(combo);
+		if (combo == '9')
+		{
+		/*terminate loop*/
+		break;
+		}
 		putchar(',');
 		putchar(' ');
 		combo++;
 	}
-	/*print 9*/
-	putchar('9');
+	/*print new line*/
+	putchar('\n');
 
 	return (0);
 }
