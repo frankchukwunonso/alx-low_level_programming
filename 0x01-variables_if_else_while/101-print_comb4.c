@@ -21,11 +21,11 @@ int main(void)
 					putchar(cents);
 					putchar(tens);
 					putchar(units);
-					if (cent == '7' && tens == '8' && units == '9')
+					if (cents == '7' && tens == '8' && units == '9')
 					{/* stop punctuation at 789 */
 						break;
 					}
-					putchar(',')
+					putchar(',');
 				}
 			}
 		}
