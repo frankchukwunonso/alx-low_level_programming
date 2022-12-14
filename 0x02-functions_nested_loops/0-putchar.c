@@ -7,7 +7,7 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-char _putchar(char c)
+int _putchar(char c)
 {
 	_putchar('_');
 	_putchar('p');
@@ -18,5 +18,5 @@ char _putchar(char c)
 	_putchar('a');
 	_putchar('r');
 
-	return (c);
+	return (write(1, &c,1);
 }
