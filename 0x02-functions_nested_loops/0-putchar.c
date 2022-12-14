@@ -18,5 +18,5 @@ int _putchar(char c)
 	_putchar('a');
 	_putchar('r');
 
-	return (write(1, &c,1);
+	return (write(1, &c,1));
 }
