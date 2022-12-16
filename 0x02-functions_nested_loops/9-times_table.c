@@ -11,29 +11,22 @@ void times_table(void)
 	{
 		for (row = 0; row <= 9; row++) /* creates row loop */
 		{
-			d = (row * col);
-			if ((d / 10) == 0) /* for numbers, for 0 - 9 */
+			d = (row * col)
+			if ((d / 10) > 0)
 			{
-				_putchar((d / 10) + 48);
-				_putchar((d % 10) + 48);
-				if (!(row == 9))
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-				}
+				_putchar((d / 10) + 48)
 			}
-			else
+			_putchar((d % 10) + 48)
+			if (row != 9)
 			{
-				_putchar((d / 10) + 48);
-				_putchar((d % 10) + 48);
-				if (!(row == 9))
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
+				_putchar(',')
+				_putchar(' ')
+			}
+			if ((d /10) == 0)
+			{
+				_putchar(' ')
 			}
 		}
-		_putchar('\n');
 	}
+_putchar('\n');
 }
