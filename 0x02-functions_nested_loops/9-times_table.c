@@ -13,9 +13,15 @@ void times_table(void)
 		{
 			d = row * col;
 			_putchar(d);
-			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
+			if (row != 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+				if ((d % 10) == 0)
+				{
+					_putchar(' ');
+				}
+			}
 		}
 		_putchar('\n');
 	}
