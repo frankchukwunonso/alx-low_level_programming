@@ -5,24 +5,36 @@
  */
 void times_table(void)
 {
-	int row, col, d;
+	int row, col, d; /* declare varieables to be used in the function */
 
-	for (col = '0'; col <= '9'; col++)
+	for (col = 0; col <= 9; col++)  /* creates colunm loop */
 	{
-		for (row = '0'; row <= '9'; row++)
+		for (row = 0; row <= 9; row++) /* creates row loop */
 		{
-			d = row * col;
-			_putchar(d);
-			if (row != '9')
+			d = (row * col);
+			if ((d / 10) == 0) /* for numbers, for 0 - 9 */
 			{
-				_putchar(',');
-				_putchar(' ');
-				if ((d % 10) == 0)
+				putchar((d / 10) + 48);
+				putchar((d % 10) + 48);
+				if (!(row == 9))
 				{
-					_putchar(' ');
+					putchar(',');
+					putchar(' ');
+					putchar(' ');
+				}
+			}
+			else
+			{
+				putchar((d / 10) + 48);
+				putchar((d % 10) + 48);
+				if (!(row == 9))
+				{
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
-		_putchar('\n');
+		putchar('\n');
 	}
+	return (0);
 }
