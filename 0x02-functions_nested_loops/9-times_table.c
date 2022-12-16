@@ -27,9 +27,6 @@ void times_table(void)
 			}
 			_putchar((d % 10) + 48);
 		}
-		if (col < 9)
-		{
 		_putchar('\n');
-		}
 	}
 }
