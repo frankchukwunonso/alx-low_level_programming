@@ -14,27 +14,27 @@ void times_table(void)
 			d = (row * col);
 			if ((d / 10) == 0) /* for numbers, for 0 - 9 */
 			{
-				putchar((d / 10) + 48);
-				putchar((d % 10) + 48);
+				_putchar((d / 10) + 48);
+				_putchar((d % 10) + 48);
 				if (!(row == 9))
 				{
-					putchar(',');
-					putchar(' ');
-					putchar(' ');
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
 				}
 			}
 			else
 			{
-				putchar((d / 10) + 48);
-				putchar((d % 10) + 48);
+				_putchar((d / 10) + 48);
+				_putchar((d % 10) + 48);
 				if (!(row == 9))
 				{
-					putchar(',');
-					putchar(' ');
+					_putchar(',');
+					_putchar(' ');
 				}
 			}
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 	return (0);
 }
