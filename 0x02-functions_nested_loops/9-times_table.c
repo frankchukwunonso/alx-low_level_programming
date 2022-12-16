@@ -11,20 +11,20 @@ void times_table(void)
 	{
 		for (row = 0; row <= 9; row++) /* creates row loop */
 		{
-			d = (row * col)
+			d = (row * col);
 			if ((d / 10) > 0)
 			{
-				_putchar((d / 10) + 48)
+				_putchar((d / 10) + 48);
 			}
-			_putchar((d % 10) + 48)
+			_putchar((d % 10) + 48);
 			if (row != 9)
 			{
-				_putchar(',')
-				_putchar(' ')
+				_putchar(',');
+				_putchar(' ');
 			}
 			if ((d /10) == 0)
 			{
-				_putchar(' ')
+				_putchar(' ');
 			}
 		}
 	}
