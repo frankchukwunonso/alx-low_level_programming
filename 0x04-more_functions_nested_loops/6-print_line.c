@@ -7,9 +7,10 @@
  */
 void print_line(int n)
 {
-	int line;
+	int line, d;
 
-	for (line = 0; line <= n; line++)
+	d = n - 1
+	for (line = 0; line <= d; line++)
 	{
 		if (n > 0)
 		{
