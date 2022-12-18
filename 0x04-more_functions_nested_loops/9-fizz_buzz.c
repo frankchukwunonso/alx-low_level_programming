@@ -16,25 +16,25 @@ int main(void)
 		if ((num % 15) == 0)
 		{
 			printf("FizzBuzz");
-			printf(" ");
+			putchar(' ');
 		}
 		else if ((num % 3) == 0)
 		{
 			printf("Fizz");
-			printf(" ");
+			putchar(' ');
 		}
 		else if ((num % 5) == 0)
 		{
 			printf("Buzz");
-			printf(" ");
+			putchar(' ');
 		}
 		else
 		{
 			printf("%d", num);
-			printf(" ");
+			putchar(' ');
 		}
 	}
-	printf("\n");
+	putchar('\n');
 
 	return (0);
 }
