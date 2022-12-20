@@ -12,13 +12,23 @@ int main(void)
 	int f, c;
 	int n;
 
+	printf("%d, ", f2);
+	printf("%d, ", f1);
+
 	for (n = 0; n < 50; n++)
 	{
 		f = f2 + f1;
+		printf("%d", f);
+		if (n < 49)
+		{
+			printf(", ");
+		}
 		c = f1;
 		f1 = f;
 		f2 = c;
 	}
+	printf("\n");
+
 	return (0);
 }
 
