@@ -1,6 +1,6 @@
-#include "main.h"
+#include <stdio.h>
 /**
- * print_to_98
+ * print_to_98 - running to 98
  *
  * @n: it is a parameter
  *
@@ -8,22 +8,24 @@
  */
 void print_to_98(int n)
 {
-	int d;
+	int i;
+	int n1 = n;
 
-	if (n <= 98)
+	if (n > 98)
 	{
-		for (d = n; d <= 98; d++)
+		while (n >= 98)
 		{
-			_putchar(d);
+			putchar(n);
+			n--;
 		}
-		_putchar('\n');
 	}
 	else
 	{
-		for (d = n; d >= 98; d--)
+		while (n < 97)
 		{
-			_putchar(d);
+			putchar(n);
+			n++;
 		}
-		_putchar('\n');
 	}
 }
+
