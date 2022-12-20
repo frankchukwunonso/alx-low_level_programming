@@ -8,20 +8,18 @@
  */
 void print_to_98(int n)
 {
-	if (n >= 98)
+	if (n > 98)
 	{
-		while (n >= 98)
+		while (n > 98)
 		{
 			printf("%d", n);
 			n--;
-			if (n != 98)
-			{
-				printf(", ");
-			}
+			printf(", ");
 		}
+		printf("98");
 		putchar('\n');
 	}
-	else
+	else if (n < 98)
 	{
 		while (n <= 97)
 		{
@@ -31,6 +29,10 @@ void print_to_98(int n)
 		}
 		printf("98");
 		putchar('\n');
+	}
+	else
+	{
+		printf("98\n");
 	}
 }
 
