@@ -19,7 +19,7 @@ int main(void)
 	{
 		f = f2 + f1;
 		printf("%ld", f);
-		if (n < 49)
+		if (n < 47)
 		{
 			printf(", ");
 		}
