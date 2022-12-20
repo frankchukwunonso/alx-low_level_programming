@@ -15,7 +15,7 @@ void print_rev(char *s)
 		len++;
 		index++;
 	}
-	l--; /* to omit the null char in starting the print_rev */
+	len--; /* to omit the null char in starting the print_rev */
 	while (len >= 0)
 	{
 		_putchar(s[len]);
