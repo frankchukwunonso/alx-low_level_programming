@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-	int f2 = 1;
-	int f1 = 2;
-	int f, c;
+	long int f2 = 1;
+	long int f1 = 2;
+	long int f, c;
 	int n;
 
 	printf("%d, ", f2);
