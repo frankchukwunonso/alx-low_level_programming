@@ -24,7 +24,7 @@ void print_to_98(int n)
 	{
 		while (n < 97)
 		{
-			putchar("%d", n);
+			printf("%d", n);
 			n++;
 			printf(", ");
 		}
