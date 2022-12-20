@@ -9,7 +9,7 @@ int main(void)
 {
 	long int f2 = 1;
 	long int f1 = 2;
-	long int f;
+	long int f, c;
 
 	printf("%ld, ", f2);
 	printf("%ld, ", f1);
@@ -19,7 +19,7 @@ int main(void)
 		f = f2 + f1;
 		if ((f % 2) == 0)
 		{
-			printf("ld", f);
+			printf("%ld", f);
 			printf(", ");
 		}
 			c = f1;
