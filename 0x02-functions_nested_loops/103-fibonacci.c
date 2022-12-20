@@ -9,22 +9,23 @@ int main(void)
 {
 	long int f2 = 1;
 	long int f1 = 2;
-	long int f, c;
+	long int f = 0;
+	long int c, n;
 
 	printf("%ld, ", f2);
 	printf("%ld, ", f1);
 
-	while (f < 4000000)
+	f = f2 + f1;
+	while (1)
 	{
-		f = f2 + f1;
-		if ((f % 2) == 0)
+		if ((f % 2) == 0 && f < 4000000)
 		{
 			printf("%ld", f);
 			printf(", ");
 		}
-			c = f1;
-			f1 = f;
-			f2 = c;
+	c = f1;
+	f1 = f;
+	f2 = c;
 	}
 	printf("\n");
 
