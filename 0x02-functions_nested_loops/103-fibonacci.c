@@ -10,7 +10,7 @@ int main(void)
 	long int f2 = 1;
 	long int f1 = 2;
 	long int f = 0;
-	long int c, n;
+	long int c;
 
 	printf("%ld, ", f2);
 	printf("%ld, ", f1);
