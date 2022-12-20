@@ -15,7 +15,7 @@ int main(void)
 	printf("%ld, ", f2);
 	printf("%ld, ", f1);
 
-	for (n = 0; n < 50; n++)
+	for (n = 0; n < 48; n++)
 	{
 		f = f2 + f1;
 		printf("%ld", f);
