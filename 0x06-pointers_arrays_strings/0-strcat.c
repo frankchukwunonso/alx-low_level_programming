@@ -2,41 +2,28 @@
 
 /**
  * _strcat - concatenates strings
- * @dest: a pointer parameter
- * @src: a pointer parameter
+ * @dest: pointer parameter
+ * @src: pointer to a char
  *
- * Return: returns a pointer to a character
+ * Return: pointer to a char
  */
 char *_strcat(char *dest, char *src)
 {
-	int len, dest_len, src_len;
+	int dest_len = 0;
 
-	len = 0;
-	while (dest[len] != '\0')
+	while (dest[dest_len])
 	{
-		len++;
-	}
-	dest_len = len;
-
-	len = 0;
-	while (src[len] != '\0')
-	{
-		len++;
-	}
-	src_len = len;
-
-	char *cat[dest_len + src_len - 1];
-
-	for (i = 0; i <= dest_len; i++)
-	{
-		cat[i] = dest[i];
+		dest_len++;
 	}
 
-	for (i = 0; i <= src_len; i++)
+	while (*src)
 	{
-		cat[dest_len + i] = src[i];
+		dest[dest_len] = *src;
+		src++;
+		dest_len++;
 	}
 
-	*dest = *cat;
+	dest[dest_len] = '\0';
 
-	return (*dest);
+	return (dest);
+}
