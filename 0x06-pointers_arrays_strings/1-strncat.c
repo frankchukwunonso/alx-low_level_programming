@@ -8,14 +8,14 @@
  *
  * Return: returns a pointer to an integer
  */
-char *_strcat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int dest_len = 0;
 	int i;
 
 	while (dest[dest_len])
 	{
-		destlen++;
+		dest_len++;
 	}
 
 	for (i = 0; i < n && src[i] != '\0'; i++)
